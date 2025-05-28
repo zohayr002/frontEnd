@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+    />
+    <link rel="stylesheet" href="css/index.css" />
+  </head>
+  <body>
+    <header>
+      <button class="btn">
+        <a style="color: white; text-decoration: none" href="looby.html"
+          >Create</a
+        >
+      </button>
+    </header>
+    <div class="disable-bar">
+      <div class="bar"></div>
+    </div>
+    <div class="buutonsContainer">
+      <div id="camera-btn" class="icon-container">
+        <i id="kolo" class="fa-solid fa-camera preactive"></i>
+      </div>
+      <div id="audio-btn" class="icon-container">
+        <i id="kolo2" class="fa-solid fa-microphone preactive"></i>
+      </div>
+      <div id="screen-btn" class="icon-container">
+        <i class="fa-solid fa-display"></i>
+      </div>
+      <div id="leave-btn" class="icon-container">
+        <i class="fa-solid fa-arrow-right-from-bracket"></i>
+      </div>
+    </div>
+    <div class="container">
+      <div id="fullScreen" class="expand"><i class="fa-solid fa-expand"></i></div>
+      <div id="bigFrame">
+      </div>
+      <div id="smallFrames"></div>
+    </div>
+
+
+    <script src="js/AgoraRTC_N-4.22.0.js"></script>
+    <script src="js/agora-rtm-2.1.10.min.js"></script>
+    <script src="js/room.js"></script>
+    <script src="js/root_rtm.js"></script>
+    <script src="js/root_rtc.js"></script>
+  </body>
+</html>

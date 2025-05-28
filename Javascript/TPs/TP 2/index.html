@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <title>Document</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <img src="images/logo.svg" alt="">
+  <div class="container">
+    <div class="left">
+      <div class="bill">
+        <p class="billParagraph">Bill</p>
+        <div class="divInput">
+          <div class="dollar"><i class="fa-solid fa-dollar-sign"></i></div>
+          <input class="fill" type="number" placeholder="0">
+        </div>
+      </div>
+      <div class="tip">
+        <p class="billParagraph">Select tip %</p>
+        <div class="selectGrid">
+          <button value="0.05" class="select">5%</button>
+          <button value="0.10" class="select">10%</button>
+          <button value="0.15" class="select">15%</button>
+          <button value="0.25" class="select">25%</button>
+          <button value="0.50" class="select">50%</button>
+          <input class="custom" type="text" placeholder="Custom">
+        </div>
+      </div>
+      <div class="bill">
+        <div style="display: flex; justify-content: space-between;">
+          <p class="billParagraph">Number of People</p>
+          <p id="zero" class="billParagraph" style="display: none;">Cant be zero</p>
+        </div>
+        <div class="divInput">
+          <div class="dollar"><i class="fa-solid fa-user"></i></div>
+          <input class="numberPeople" type="number" placeholder="0">
+        </div>
+      </div>
+    </div>
+    <div class="right">
+      <div class="result">
+        <div class="resultLabel">
+          <span style="color: white;">Tip Amount</span> <br>
+          <span style="color: rgba(255, 255, 255, 0.438);">/ Person</span>
+        </div>
+        <div class="valeurDiv">
+          <p class="dollarLabel">$</p>
+          <p class="valeur">0.00</p>
+        </div>
+      </div>
+      <div class="result">
+        <div class="resultLabel">
+          <span style="color: white;">Total</span> <br>
+          <span style="color: rgba(255, 255, 255, 0.438);">/ Person</span>
+        </div>
+        <div class="valeurDiv">
+          <p class="dollarLabel">$</p>
+          <p class="valeur2">0.00</p>
+        </div>
+      </div>
+      <div class="seperatuer"></div>
+      <button id="reset">RESET</button>
+    </div>
+  </div>
+  <script src="main.js"></script>
+</body>
+</html>
